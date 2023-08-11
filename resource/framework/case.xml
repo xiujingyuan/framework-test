@@ -1,0 +1,216 @@
+<sqlmapper>
+
+    <sql name ="get_case_mock_response" database="gaea_framework">
+        <![CDATA[
+
+                select * from finlab_cases_api_mock where mock_case_id =#{case_id}  and mock_status ='active'
+        ]]>
+        <param name="case_id" type ="String"/>
+    </sql>
+
+
+    <sql name ="get_all_group_cases" database="gaea_framework">
+        <![CDATA[
+
+                SELECT *
+                FROM finlab_cases where case_exec_group = #{case_exec_group} and case_is_exec = 1  and case_exec_group is not null order by case_exec_priority asc ;
+
+        ]]>
+        <param name="case_exec_group" type ="String"/>
+    </sql>
+
+
+
+
+    <sql name ="get_all_cases" database="gaea_framework">
+        <![CDATA[
+
+                SELECT *
+                FROM finlab_cases where case_is_exec = 1;
+
+        ]]>
+
+
+    </sql>
+
+
+    <sql name ="get_case_byid" database="gaea_framework">
+        <![CDATA[
+
+                SELECT *
+                FROM finlab_cases where case_id = #{case_id};
+
+        ]]>
+        <param name="case_id" type ="String"/>
+
+    </sql>
+
+    <sql name ="get_init_bycaseid" database="gaea_framework">
+    <![CDATA[
+
+                SELECT *
+                FROM finlab_cases_init where case_init_case_id = #{case_id} and case_init_type = #{init_type};
+        ]]>
+        <param name="case_id" type ="String"/>
+        <param name="init_type" type ="String"/>
+    </sql>
+
+    <sql name ="get_init_byinitid" database="gaea_framework">
+        <![CDATA[
+
+                SELECT *
+                FROM finlab_cases_init where case_init_id = #{init_id} and case_init_type = #{init_type};
+        ]]>
+        <param name="init_id" type ="String"/>
+        <param name="init_type" type ="String"/>
+    </sql>
+
+
+
+    <sql name ="get_prev_bycaseid" database="gaea_framework">
+        <![CDATA[
+
+                SELECT *
+                FROM finlab_case_prev_condition where prev_case_id = #{case_id};
+        ]]>
+        <param name="case_id" type ="String"/>
+
+    </sql>
+
+
+    <sql name ="check_is_exits_prevprocess" database="gaea_framework">
+        <![CDATA[
+
+                SELECT count(1) as count
+                FROM finlab_case_prev_process where  prev_case_id= #{case_id} and prev_flag = #{prev_flag};
+        ]]>
+        <param name="case_id" type ="String"/>
+        <param name="prev_flag" type ="String"/>
+    </sql>
+
+    <sql name ="get_prev_entity" database="gaea_framework">
+        <![CDATA[
+
+                SELECT *
+                FROM finlab_case_prev_condition where prev_case_id= #{case_id} and prev_flag = #{prev_flag};
+        ]]>
+        <param name="case_id" type ="String"/>
+        <param name="prev_flag" type ="String"/>
+    </sql>
+
+    <sql name ="get_case_all_prev_condition" database="gaea_framework">
+        <![CDATA[
+
+                SELECT *
+                FROM finlab_case_prev_process where prev_case_id= #{case_id};
+        ]]>
+        <param name="case_id" type ="String"/>
+    </sql>
+
+    <sql name ="get_special_keyvalue" database="gaea_framework">
+        <![CDATA[
+
+                SELECT *
+                FROM finlab_system_params where name= #{key} limit 1;
+        ]]>
+        <param name="key" type ="String"/>
+
+    </sql>
+
+
+    <sql name ="get_cases" database="gaea_framework">
+        <![CDATA[
+
+               SELECT * FROM finlab_cases where case_is_exec =1 and case_from_system =#{from_system}
+                and (case_exec_group_priority='main' or case_exec_group_priority is null)
+                order by case_id asc;
+
+        ]]>
+        <param name="from_system" type ="String"/>
+    </sql>
+
+    <sql name ="get_prevs_bycaseid" database="gaea_framework">
+        <![CDATA[
+                select * from finlab_case_prev_condition where prev_case_id =#{prev_case_id} and prev_setup_type =#{prev_setup_type}
+        ]]>
+        <param name="prev_case_id" type ="String"/>
+        <param name="prev_setup_type" type ="String"/>
+    </sql>
+
+    <sql name ="get_sub_cases" database="gaea_framework">
+        <![CDATA[
+
+               SELECT * FROM finlab_cases where case_is_exec =1 and case_exec_group =#{case_exec_group} and case_from_system =#{from_system}
+                and case_exec_group_priority='sub'
+                order by case_exec_priority asc;
+
+        ]]>
+        <param name="case_exec_group" type ="String"/>
+        <param name="from_system" type ="String"/>
+    </sql>
+
+    <sql name ="get_summary_support" database="gaea_framework">
+        <![CDATA[
+                SELECT
+    SUM(total_count) as total_count, SUM(success_count) as success_count
+FROM
+    (SELECT
+        COUNT(1) AS total_count,
+            SUM(history_case_result) AS success_count
+    FROM
+        history_finlab_cases
+    WHERE
+        run_id = #{run_id_1}
+            AND (history_case_exec_group IS NULL
+            OR history_case_exec_group = '') UNION ALL SELECT
+        (SELECT
+                    COUNT(1)
+                FROM
+                    history_finlab_cases
+                WHERE
+                    run_id = #{run_id_2}
+                        AND history_case_exec_group <> ''
+                        AND history_case_exec_group_priority = 'main') AS total_count,
+            (SELECT
+                    COUNT(1)
+                FROM
+                    history_finlab_cases
+                WHERE
+                    run_id = #{run_id_3}
+                        AND history_case_exec_group <> ''
+                        AND history_case_exec_group_priority = 'main') - (SELECT
+                    COUNT(1)
+                FROM
+                    history_finlab_cases
+                WHERE
+                    history_case_exec_group IN (SELECT
+                            history_case_exec_group
+                        FROM
+                            history_finlab_cases
+                        WHERE
+                            run_id = #{run_id_4}
+                                AND history_case_exec_group <> ''
+                                AND history_case_id IN (SELECT
+                                    history_case_id
+                                FROM
+                                    history_finlab_cases
+                                WHERE
+                                    run_id = #{run_id_5}
+                                        AND history_case_exec_group <> ''
+                                        AND history_case_result = 0))
+                        AND history_case_exec_group_priority = 'main'
+                        AND run_id = #{run_id_6}) AS success_count
+    FROM DUAL) AS result;
+
+        ]]>
+        <param name="run_id_1" type ="String"/>
+        <param name="run_id_2" type ="String"/>
+        <param name="run_id_3" type ="String"/>
+        <param name="run_id_4" type ="String"/>
+        <param name="run_id_5" type ="String"/>
+        <param name="run_id_6" type ="String"/>
+    </sql>
+
+
+
+</sqlmapper>

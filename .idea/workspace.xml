@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e9dc4c64-8c48-4ba4-b53f-1f62d820a3c2" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Unit Test" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/foundation_test/util/tools/tools.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/resource/database_dev.config" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/resource/database.config" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="IlluminatedCloudWorkspaceSettings">
+    <option name="projectWorkspaceSettings">
+      <ProjectWorkspaceSettings>
+        <option name="anonymousApexSettings">
+          <AnonymousApexSettings>
+            <option name="savedDocuments">
+              <list>
+                <AnonymousApexSavedDocument>
+                  <option name="name" value="Anonymous Apex 1" />
+                </AnonymousApexSavedDocument>
+              </list>
+            </option>
+          </AnonymousApexSettings>
+        </option>
+        <option name="soqlQuerySettings">
+          <SoqlQuerySettings>
+            <option name="savedDocuments">
+              <list>
+                <SoqlQuerySavedDocument>
+                  <option name="name" value="SOQL Query 1" />
+                </SoqlQuerySavedDocument>
+              </list>
+            </option>
+          </SoqlQuerySettings>
+        </option>
+      </ProjectWorkspaceSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1zqnjqF4PNHZ774uP9aoVVXq6Fl" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="Git.Branch.Popup.ShowAllRemotes" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/foundation_test/case/dh/assign_case/cn" />
+      <recent name="$PROJECT_DIR$/foundation_test/function/dh/assign_case" />
+      <recent name="$PROJECT_DIR$/foundation_test/case/dh/assign_case" />
+      <recent name="$PROJECT_DIR$/models/fox" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/foundation_test/case/dh/assign_case/cn" />
+      <recent name="$PROJECT_DIR$/foundation_test/case/dh/assign_case/overseas" />
+      <recent name="$PROJECT_DIR$/foundation_test/function/dh" />
+      <recent name="$PROJECT_DIR$/foundation_test/function/dh/asset-sync" />
+      <recent name="$PROJECT_DIR$/foundation_test/case/dh/asset-sync" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python tests.pytest for test_cn_avg_amount_by_month_assigned_amount.TestCnAvgAmountByMonthAssignedAmount">
+    <configuration name="__init__" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="framework-test" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/foundation_test/case/dh" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/foundation_test/case/dh/__init__.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="dh_auto_test" type="tests" factoryName="py.test">
+      <module name="framework-test" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="--environment" value="dev" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/venv/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;-s -m dh_cn_assign -k dh_cn_capacity_coefficient_in_hand_smaller_than_hand foundation_test/case/dh/assign_case --env\u003dfox1 --country\u003dCN --environment\u003ddev&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/foundation_test/case/dh/assign_case&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test_cn_avg_amount_by_month_assigned_amount.TestCnAvgAmountByMonthAssignedAmount" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="framework-test" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/foundation_test/case/dh/assign_case/cn" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_cn_avg_amount_by_month_assigned_amount.TestCnAvgAmountByMonthAssignedAmount&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test_cn_base_common_avg_amount.TestCnBaseCommonAvgAmount" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="framework-test" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/foundation_test/case/dh/assign_case/cn" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_cn_base_common_avg_amount.TestCnBaseCommonAvgAmount&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test_cn_capacity_coefficient_in_hand.TestCnCapacityCoefficientInHand" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="framework-test" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/foundation_test/case/dh/assign_case/cn" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_cn_capacity_coefficient_in_hand.TestCnCapacityCoefficientInHand&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test_cn_capacity_coefficient_in_hand.TestCnCapacityCoefficientInHand.test_cn_capacity_coefficient_in_hand_bigger_than_hand" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="framework-test" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/foundation_test/case/dh/assign_case/cn" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_cn_capacity_coefficient_in_hand.TestCnCapacityCoefficientInHand.test_cn_capacity_coefficient_in_hand_bigger_than_hand&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test_recovery.TestRecovery" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="framework-test" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/foundation_test/case/dh/asset_sync" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_recovery.TestRecovery&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.__init__" />
+      <item itemvalue="Python tests.dh_auto_test" />
+      <item itemvalue="Python tests.pytest for test_cn_capacity_coefficient_in_hand.TestCnCapacityCoefficientInHand.test_cn_capacity_coefficient_in_hand_bigger_than_hand" />
+      <item itemvalue="Python tests.pytest for test_cn_base_common_avg_amount.TestCnBaseCommonAvgAmount" />
+      <item itemvalue="Python tests.pytest for test_cn_capacity_coefficient_in_hand.TestCnCapacityCoefficientInHand" />
+      <item itemvalue="Python tests.pytest for test_recovery.TestRecovery" />
+      <item itemvalue="Python tests.pytest for test_cn_avg_amount_by_month_assigned_amount.TestCnAvgAmountByMonthAssignedAmount" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.pytest for test_cn_avg_amount_by_month_assigned_amount.TestCnAvgAmountByMonthAssignedAmount" />
+        <item itemvalue="Python tests.pytest for test_recovery.TestRecovery" />
+        <item itemvalue="Python tests.pytest for test_cn_capacity_coefficient_in_hand.TestCnCapacityCoefficientInHand" />
+        <item itemvalue="Python tests.pytest for test_cn_base_common_avg_amount.TestCnBaseCommonAvgAmount" />
+        <item itemvalue="Python tests.pytest for test_cn_capacity_coefficient_in_hand.TestCnCapacityCoefficientInHand.test_cn_capacity_coefficient_in_hand_bigger_than_hand" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e9dc4c64-8c48-4ba4-b53f-1f62d820a3c2" name="Changes" comment="" />
+      <created>1634884624185</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1634884624185</updated>
+      <workItem from="1634884627827" duration="804000" />
+      <workItem from="1634886076303" duration="2131000" />
+      <workItem from="1634901608198" duration="560000" />
+      <workItem from="1635418428273" duration="598000" />
+      <workItem from="1635733834851" duration="51000" />
+      <workItem from="1640830662785" duration="478000" />
+      <workItem from="1640831825478" duration="72000" />
+      <workItem from="1642146641242" duration="621000" />
+      <workItem from="1642154098310" duration="3270000" />
+      <workItem from="1642385183905" duration="875000" />
+      <workItem from="1642489534379" duration="3401000" />
+      <workItem from="1642582288622" duration="15000" />
+      <workItem from="1642677808173" duration="521000" />
+      <workItem from="1642735326789" duration="16967000" />
+      <workItem from="1643178637495" duration="31000" />
+      <workItem from="1645580515815" duration="1636000" />
+      <workItem from="1646029191266" duration="299000" />
+      <workItem from="1654071381506" duration="235000" />
+      <workItem from="1654071775058" duration="191000" />
+      <workItem from="1656316174363" duration="13000" />
+      <workItem from="1656400793021" duration="423000" />
+      <workItem from="1656902526246" duration="247000" />
+      <workItem from="1657534839692" duration="4712000" />
+      <workItem from="1657607527614" duration="1237000" />
+      <workItem from="1657612721980" duration="8953000" />
+      <workItem from="1658389956788" duration="20058000" />
+      <workItem from="1658474184073" duration="403000" />
+      <workItem from="1658474623612" duration="109000" />
+      <workItem from="1658474762452" duration="6375000" />
+      <workItem from="1658737923344" duration="6828000" />
+      <workItem from="1658998354012" duration="1485000" />
+      <workItem from="1659341257161" duration="255000" />
+      <workItem from="1659341539574" duration="88000" />
+      <workItem from="1659341655418" duration="123206000" />
+      <workItem from="1660528577379" duration="54243000" />
+      <workItem from="1662535852394" duration="11070000" />
+      <workItem from="1662617453208" duration="199000" />
+      <workItem from="1664264751462" duration="3107000" />
+      <workItem from="1664270239105" duration="21499000" />
+      <workItem from="1665367795763" duration="54000" />
+      <workItem from="1665540283501" duration="25110000" />
+      <workItem from="1665996261498" duration="99000" />
+      <workItem from="1666235259968" duration="608000" />
+      <workItem from="1666346226156" duration="1520000" />
+      <workItem from="1666752443714" duration="4666000" />
+      <workItem from="1666852349506" duration="2677000" />
+      <workItem from="1666864670273" duration="35000" />
+      <workItem from="1666944573155" duration="6981000" />
+      <workItem from="1667183296184" duration="4277000" />
+      <workItem from="1667445088107" duration="116000" />
+      <workItem from="1667459216111" duration="409000" />
+      <workItem from="1667460888885" duration="1491000" />
+      <workItem from="1667549213026" duration="1366000" />
+      <workItem from="1667790034238" duration="630000" />
+      <workItem from="1667792649641" duration="7653000" />
+      <workItem from="1668159859765" duration="2956000" />
+      <workItem from="1668397238255" duration="598000" />
+      <workItem from="1668480354689" duration="137000" />
+      <workItem from="1668483974233" duration="28000" />
+      <workItem from="1668493566595" duration="5088000" />
+      <workItem from="1669598945323" duration="598000" />
+      <workItem from="1669948487804" duration="3711000" />
+      <workItem from="1669966296955" duration="1674000" />
+      <workItem from="1670208415373" duration="37000" />
+      <workItem from="1670580670494" duration="240000" />
+      <workItem from="1670925494722" duration="1708000" />
+      <workItem from="1675754833247" duration="7351000" />
+      <workItem from="1680579668416" duration="628000" />
+      <workItem from="1680839278718" duration="1011000" />
+      <workItem from="1681110956874" duration="95864000" />
+      <workItem from="1681725893846" duration="7718000" />
+      <workItem from="1681888340553" duration="1785000" />
+      <workItem from="1682565730863" duration="24000" />
+      <workItem from="1683271014657" duration="591000" />
+      <workItem from="1683280294423" duration="14648000" />
+      <workItem from="1683771662988" duration="914000" />
+      <workItem from="1683857762991" duration="1057000" />
+      <workItem from="1684723829576" duration="47000" />
+      <workItem from="1685930280430" duration="1400000" />
+      <workItem from="1686220981167" duration="1127000" />
+      <workItem from="1686301557986" duration="733000" />
+      <workItem from="1687937862752" duration="3396000" />
+      <workItem from="1690454336940" duration="924000" />
+      <workItem from="1691481074532" duration="1663000" />
+      <workItem from="1691658891890" duration="861000" />
+      <workItem from="1691742438126" duration="10000" />
+      <workItem from="1691742509749" duration="293000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.config" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app/rbiz_tool/Rbiztool.py</url>
+          <line>130</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app/rbiz_tool/Rbiztool.py</url>
+          <line>63</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/foundation_test/function/dh/assign_case/assign_db_function.py</url>
+          <line>368</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/foundation_test/util/tools/tools.py</url>
+          <line>415</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/foundation_test/util/tools/tools.py</url>
+          <line>406</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/foundation_test/function/dh/assign_case/assign_get_data.py</url>
+          <line>114</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/foundation_test/function/dh/assign_case/assign_get_data.py</url>
+          <line>124</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/foundation_test/function/dh/assign_case/assign_get_data.py</url>
+          <line>129</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/foundation_test/function/dh/assign_case/assign_get_data.py</url>
+          <line>133</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/foundation_test/function/dh/assign_case/assign_get_data.py</url>
+          <line>135</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/foundation_test/function/dh/assign_case/assign_db_function.py</url>
+          <line>268</line>
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/foundation_test/function/dh/assign_case/assign_check_function.py</url>
+          <line>175</line>
+          <option name="timeStamp" value="55" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/foundation_test/function/dh/assign_case/assign_check_function.py</url>
+          <line>169</line>
+          <option name="timeStamp" value="56" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/foundation_test/function/dh/assign_case/assign_get_data.py</url>
+          <line>83</line>
+          <option name="timeStamp" value="57" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/foundation_test/function/dh/assign_case/assign_get_data.py</url>
+          <line>94</line>
+          <option name="timeStamp" value="65" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/foundation_test/function/dh/assign_case/assign_get_data.py</url>
+          <line>87</line>
+          <option name="timeStamp" value="66" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/foundation_test/function/dh/assign_case/assign_check_function.py</url>
+          <line>164</line>
+          <option name="timeStamp" value="67" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/foundation_test/function/dh/assign_case/assign_get_data.py</url>
+          <line>85</line>
+          <option name="timeStamp" value="68" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/foundation_test/function/dh/assign_case/assign_check_function.py</url>
+          <line>654</line>
+          <option name="timeStamp" value="69" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/foundation_test/case/dh/assign_case/cn/test_cn_base_common_avg_amount.py</url>
+          <line>78</line>
+          <option name="timeStamp" value="71" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/foundation_test/case/dh/assign_case/cn/test_cn_avg_by_quality_to_group.py</url>
+          <line>87</line>
+          <option name="timeStamp" value="72" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/framework_test$dh_interface.coverage" NAME="dh_interface Coverage Results" MODIFIED="1681184637789" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/foundation_test/interface/dh" />
+    <SUITE FILE_PATH="coverage/framework_test$pytest_in_test_recovery_py.coverage" NAME="pytest in test_recovery.py Coverage Results" MODIFIED="1681194804034" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/foundation_test/case/dh" />
+    <SUITE FILE_PATH="coverage/framework_test$email_util.coverage" NAME="email_util Coverage Results" MODIFIED="1645580932049" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/foundation_test/util/email" />
+    <SUITE FILE_PATH="coverage/framework_test$pytest_for_test_import_asset_TestImportAsset.coverage" NAME="pytest for test_import_asset.TestImportAsset Coverage Results" MODIFIED="1681206079083" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/foundation_test/case/dh/asset_sync" />
+    <SUITE FILE_PATH="coverage/framework_test$pytest_for_test_cn_base_common_avg_amount_TestCnBaseCommonAvgAmount_test_cn_extract_quality_02.coverage" NAME="pytest for test_cn_base_common_avg_amount.TestCnBaseCommonAvgAmount.test_cn_extract_quality_02 Coverage Results" MODIFIED="1681368142823" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/foundation_test/case/dh/assign_case/cn" />
+    <SUITE FILE_PATH="coverage/framework_test$pytest_for_test_cn_base_common_avg_amount_TestCnBaseCommonAvgAmount_test_cn_extract_c_card.coverage" NAME="pytest for test_cn_base_common_avg_amount.TestCnBaseCommonAvgAmount.test_cn_extract_c_card Coverage Results" MODIFIED="1681784463342" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/foundation_test/case/dh/assign_case/cn" />
+    <SUITE FILE_PATH="coverage/framework_test$__init__.coverage" NAME="__init__ Coverage Results" MODIFIED="1645580712492" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/foundation_test/case/dh" />
+    <SUITE FILE_PATH="coverage/framework_test$dh_auto_test.coverage" NAME="dh_auto_test Coverage Results" MODIFIED="1664268903769" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/framework_test$pytest_for_test_cn_capacity_coefficient_TestCnCapacityCoefficient_test_cn_capacity_coefficient.coverage" NAME="pytest for test_cn_capacity_coefficient.TestCnCapacityCoefficient.test_cn_capacity_coefficient Coverage Results" MODIFIED="1664527425890" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/foundation_test/case/dh/assign_case/cn" />
+    <SUITE FILE_PATH="coverage/framework_test$pytest_for_test_cn_base_common_avg_amount_TestCnBaseCommonAvgAmount_test_cn_extract_c_card_02.coverage" NAME="pytest for test_cn_base_common_avg_amount.TestCnBaseCommonAvgAmount.test_cn_extract_c_card_02 Coverage Results" MODIFIED="1681371468412" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/foundation_test/case/dh/assign_case/cn" />
+    <SUITE FILE_PATH="coverage/framework_test$pytest_for_test_cn_base_common_avg_amount_TestCnBaseCommonAvgAmount_test_cn_extract_quality.coverage" NAME="pytest for test_cn_base_common_avg_amount.TestCnBaseCommonAvgAmount.test_cn_extract_quality Coverage Results" MODIFIED="1681724103417" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/foundation_test/case/dh/assign_case/cn" />
+    <SUITE FILE_PATH="coverage/framework_test$pytest_for_test_cn_capacity_coefficient_in_hand_TestCnCapacityCoefficientInHand_test_cn_capacity_coefficient_in_hand_bigger_than_hand.coverage" NAME="pytest for test_cn_capacity_coefficient_in_hand.TestCnCapacityCoefficientInHand.test_cn_capacity_coefficient_in_hand_bigger_than_hand Coverage Results" MODIFIED="1681784920161" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/foundation_test/case/dh/assign_case/cn" />
+    <SUITE FILE_PATH="coverage/framework_test$pytest_for_test_cn_base_common_avg_amount_TestCnBaseCommonAvgAmount_test_cn_base_common_avg_amount_02.coverage" NAME="pytest for test_cn_base_common_avg_amount.TestCnBaseCommonAvgAmount.test_cn_base_common_avg_amount_02 Coverage Results" MODIFIED="1681724647326" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/foundation_test/case/dh/assign_case/cn" />
+    <SUITE FILE_PATH="coverage/framework_test$pytest_for_test_mock_test_a1.coverage" NAME="pytest for test_mock.test_a1 Coverage Results" MODIFIED="1681723007605" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/foundation_test/case/dh/assign_case/cn" />
+    <SUITE FILE_PATH="coverage/framework_test$pytest_for_test_cn_avg_amount_by_month_assigned_amount_test_00009.coverage" NAME="pytest for test_cn_avg_amount_by_month_assigned_amount.test_00009 Coverage Results" MODIFIED="1681381000448" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/foundation_test/case/dh/assign_case/cn" />
+    <SUITE FILE_PATH="coverage/framework_test$test_cn_base_common_avg_amount.coverage" NAME="test_cn_base_common_avg_amount Coverage Results" MODIFIED="1681368323649" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/foundation_test/case/dh/assign_case/cn" />
+    <SUITE FILE_PATH="coverage/framework_test$pytest_for_test_cn_avg_amount_by_month_assigned_amount_TestCnAvgAmountByMonthAssignedAmount_test_cn_avg_amount_by_month_assigned_amount.coverage" NAME="pytest for test_cn_avg_amount_by_month_assigned_amount.TestCnAvgAmountByMonthAssignedAmount.test_cn_avg_amount_by_month_assigned_amount Coverage Results" MODIFIED="1681381453745" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/foundation_test/case/dh/assign_case/cn" />
+    <SUITE FILE_PATH="coverage/framework_test$pytest_for_test_cn_avg_by_quality_to_group_TestCnAvgByQualityToGroup_test_cn_avg_by_quality_to_group_z_smaller_02.coverage" NAME="pytest for test_cn_avg_by_quality_to_group.TestCnAvgByQualityToGroup.test_cn_avg_by_quality_to_group_z_smaller_02 Coverage Results" MODIFIED="1681459647643" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/foundation_test/case/dh/assign_case/cn" />
+    <SUITE FILE_PATH="coverage/framework_test$pytest_for_test_refresh_debtor_arrears_TestRefreshDebtorArrears.coverage" NAME="pytest for test_refresh_debtor_arrears.TestRefreshDebtorArrears Coverage Results" MODIFIED="1681206267007" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/foundation_test/case/dh/asset_sync" />
+    <SUITE FILE_PATH="coverage/framework_test$pytest_for_test_cn_avg_by_quality_to_group_TestCnAvgByQualityToGroup_test_cn_avg_by_quality_to_group_x_smaller.coverage" NAME="pytest for test_cn_avg_by_quality_to_group.TestCnAvgByQualityToGroup.test_cn_avg_by_quality_to_group_x_smaller Coverage Results" MODIFIED="1681457511398" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/foundation_test/case/dh/assign_case/cn" />
+    <SUITE FILE_PATH="coverage/framework_test$pytest_for_test_cn_base_common_avg_amount_TestCnBaseCommonAvgAmount_test_cn_extract_c_card_01.coverage" NAME="pytest for test_cn_base_common_avg_amount.TestCnBaseCommonAvgAmount.test_cn_extract_c_card_01 Coverage Results" MODIFIED="1681723819845" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/foundation_test/case/dh/assign_case/cn" />
+    <SUITE FILE_PATH="coverage/framework_test$pytest_for_test_cn_base_common_avg_amount_TestCnBaseCommonAvgAmount_test_cn_base_common_avg_amount_01.coverage" NAME="pytest for test_cn_base_common_avg_amount.TestCnBaseCommonAvgAmount.test_cn_base_common_avg_amount_01 Coverage Results" MODIFIED="1681724916183" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/foundation_test/case/dh/assign_case/cn" />
+    <SUITE FILE_PATH="coverage/framework_test$new_assign_strategy.coverage" NAME="new_assign_strategy Coverage Results" MODIFIED="1665649416737" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/foundation_test/function/dh/assign_case" />
+    <SUITE FILE_PATH="coverage/framework_test$dh_check_function.coverage" NAME="dh_check_function Coverage Results" MODIFIED="1667805558945" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/foundation_test/function/dh/asset_sync" />
+    <SUITE FILE_PATH="coverage/framework_test$pytest_for_test_cn_base_common_avg_amount_TestCnBaseCommonAvgAmount_test_cn_extract_quality_03.coverage" NAME="pytest for test_cn_base_common_avg_amount.TestCnBaseCommonAvgAmount.test_cn_extract_quality_03 Coverage Results" MODIFIED="1681368200463" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/foundation_test/case/dh/assign_case/cn" />
+    <SUITE FILE_PATH="coverage/framework_test$pytest_for_test_recovery_TestRecovery_test_repay_before_unsigned.coverage" NAME="pytest for test_recovery.TestRecovery.test_repay_before_unsigned Coverage Results" MODIFIED="1681268991906" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/foundation_test/case/dh/asset_sync" />
+    <SUITE FILE_PATH="coverage/framework_test$pytest_for_test_cn_capacity_coefficient_in_hand_TestCnCapacityCoefficientInHand_test_cn_capacity_coefficient_in_hand_smaller_than_hand.coverage" NAME="pytest for test_cn_capacity_coefficient_in_hand.TestCnCapacityCoefficientInHand.test_cn_capacity_coefficient_in_hand_smaller_than_hand Coverage Results" MODIFIED="1681727748034" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/foundation_test/case/dh/assign_case/cn" />
+    <SUITE FILE_PATH="coverage/framework_test$pytest_in_test_cn_avg_amount_by_month_assigned_amount_py.coverage" NAME="pytest in test_cn_avg_amount_by_month_assigned_amount.py Coverage Results" MODIFIED="1681379877699" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/foundation_test/case/dh/assign_case/cn" />
+    <SUITE FILE_PATH="coverage/framework_test$pytest_for_test_tool_package_sync_TestToolPackageSync.coverage" NAME="pytest for test_tool_package_sync.TestToolPackageSync Coverage Results" MODIFIED="1681206319505" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/foundation_test/case/dh/asset_sync" />
+    <SUITE FILE_PATH="coverage/framework_test$pytest_for_test_cn_capacity_coefficient_in_hand_TestCnCapacityCoefficientInHand.coverage" NAME="pytest for test_cn_capacity_coefficient_in_hand.TestCnCapacityCoefficientInHand Coverage Results" MODIFIED="1681800389682" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/foundation_test/case/dh/assign_case/cn" />
+    <SUITE FILE_PATH="coverage/framework_test$pytest_for_test_recovery_TestRecovery.coverage" NAME="pytest for test_recovery.TestRecovery Coverage Results" MODIFIED="1683353173837" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/foundation_test/case/dh/asset_sync" />
+    <SUITE FILE_PATH="coverage/framework_test$pytest_for_test_cn_avg_by_quality_to_group_TestCnAvgByQualityToGroup_test_cn_avg_by_quality_to_group_y_smaller.coverage" NAME="pytest for test_cn_avg_by_quality_to_group.TestCnAvgByQualityToGroup.test_cn_avg_by_quality_to_group_y_smaller Coverage Results" MODIFIED="1681459406455" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/foundation_test/case/dh/assign_case/cn" />
+    <SUITE FILE_PATH="coverage/framework_test$pytest_for_test_cn_avg_amount_by_month_assigned_amount_TestCnAvgAmountByMonthAssignedAmount.coverage" NAME="pytest for test_cn_avg_amount_by_month_assigned_amount.TestCnAvgAmountByMonthAssignedAmount Coverage Results" MODIFIED="1683511349514" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/foundation_test/case/dh/assign_case/cn" />
+    <SUITE FILE_PATH="coverage/framework_test$pytest_for_test_cn_base_common_avg_amount_TestCnBaseCommonAvgAmount_test_cn_extract_quality_01.coverage" NAME="pytest for test_cn_base_common_avg_amount.TestCnBaseCommonAvgAmount.test_cn_extract_quality_01 Coverage Results" MODIFIED="1681703621565" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/foundation_test/case/dh/assign_case/cn" />
+    <SUITE FILE_PATH="coverage/framework_test$pytest_for_test_cn_base_common_avg_amount_TestCnBaseCommonAvgAmount.coverage" NAME="pytest for test_cn_base_common_avg_amount.TestCnBaseCommonAvgAmount Coverage Results" MODIFIED="1681800029484" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/foundation_test/case/dh/assign_case/cn" />
+    <SUITE FILE_PATH="coverage/framework_test$dh.coverage" NAME="dh Coverage Results" MODIFIED="1642762880087" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/framework_test$tools.coverage" NAME="tools Coverage Results" MODIFIED="1664506426833" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/foundation_test/util/tools" />
+    <SUITE FILE_PATH="coverage/framework_test$assign_check_function.coverage" NAME="assign_check_function Coverage Results" MODIFIED="1665720909979" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/foundation_test/function/dh/assign_case" />
+  </component>
+</project>

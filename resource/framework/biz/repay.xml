@@ -1,0 +1,100 @@
+<sqlmapper>
+
+
+    <sql name ="get_withhold_amount" database="biz9">
+        <![CDATA[
+
+              SELECT Sum(amount) AS amount
+                    FROM   (SELECT dtransaction_amount_f - dtransaction_repaid_amount_f
+                                                  - dtransaction_decrease_amount AS amount
+                            FROM   dtransaction
+                            WHERE  dtransaction_asset_id = (SELECT asset_id
+                                                            FROM   asset
+                                                            WHERE
+                                          asset_item_no = #{asset_item_no}
+                                                               AND dtransaction_type <> 'grant')
+                            UNION ALL
+                            SELECT ftransaction_amount_f - ftransaction_repaid_amount_f
+                                          - ftransaction_decrease_amount AS amount
+                            FROM   ftransaction
+                            WHERE  ftransaction_asset_id = (SELECT asset_id
+                                                            FROM   asset
+                                                            WHERE
+                                          asset_item_no = #{asset_item_no_1})) t
+
+        ]]>
+
+        <param name="asset_item_no" type ="String"/>
+        <param name="asset_item_no_1" type ="String"/>
+    </sql>
+
+    <sql name ="get_withhold_amount_rbiz" database="localhost_rbiz">
+        <![CDATA[
+
+                 SELECT Sum(amount) AS amount
+                    FROM   (SELECT asset_tran_total_amount - asset_tran_repaid_amount
+                                          - asset_tran_decrease_amount
+                                   AS amount
+                            FROM   asset_tran
+                            WHERE  asset_tran_asset_item_no = #{asset_item_no}
+                            and asset_tran_type <>'grant')
+                           t;
+
+        ]]>
+
+        <param name="asset_item_no" type ="String"/>
+    </sql>
+
+    <sql name ="get_withhold_comobo_task" database="localhost_rbiz">
+        <![CDATA[
+
+              select task_id from task where task_order_no in (#{asset_item_no},#{asset_item_no_sub})
+        ]]>
+
+        <param name="asset_item_no" type ="String"/>
+        <param name="asset_item_no_sub" type ="String"/>
+    </sql>
+
+    <sql name ="get_withhold_no" database="localhost_rbiz">
+        <![CDATA[
+
+            select task_id from task as t
+            inner join trade as a
+            on t.task_order_no = a.trade_no
+            inner join withhold_result as w
+            on w.withhold_result_serial_no = a.trade_ref_no
+            where w.withhold_result_asset_item_no = #{asset_item_no} and t.task_status in ('error','open','terminal');
+        ]]>
+
+        <param name="asset_item_no" type ="String"/>
+    </sql>
+
+    <sql name ="get_withholdsync_no" database="localhost_rbiz">
+        <![CDATA[
+
+            select task_id from task as t
+            where t.task_order_no = #{asset_item_no} and task_type='withhold_result_sync'  and t.task_status in ('error','open','terminal') order by task_id desc limit 1;
+        ]]>
+
+        <param name="asset_item_no" type ="String"/>
+    </sql>
+
+    <sql name ="get_idnum_byitemno" database="localhost_rbiz">
+        <![CDATA[
+
+            select sendmsg_id from sendmsg as t
+            inner join withhold_result as r
+            on t.sendmsg_order_no = r.withhold_result_user_idnum
+            where r.withhold_result_asset_item_no = #{asset_item_no}
+            and t.sendmsg_status in ('error','open','terminal')
+            and t.sendmsg_content like concat('%%',#{asset_item_no},'%%')
+             order by sendmsg_id asc limit 1;
+        ]]>
+
+        <param name="asset_item_no" type ="String"/>
+        <param name="asset_item_no_1" type ="String"/>
+    </sql>
+
+
+
+</sqlmapper>

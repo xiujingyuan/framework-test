@@ -1,0 +1,64 @@
+<sqlmapper>
+
+    <sql name ="get_prevs_bycaseid" database="gaea_framework">
+        <![CDATA[
+                select * from finlab_case_prev_condition where prev_case_id =#{prev_case_id}
+                and prev_setup_type =#{prev_setup_type}
+                and prev_task_type =#{prev_task_type}
+        ]]>
+        <param name="prev_case_id" type ="String"/>
+        <param name="prev_setup_type" type ="String"/>
+        <param name="prev_task_type" type ="String"/>
+    </sql>
+
+    <sql name ="judge_prev_exists" database="gaea_framework">
+        <![CDATA[
+                select * from finlab_case_prev_condition where prev_case_id =#{prev_case_id}
+        ]]>
+        <param name="prev_case_id" type ="String"/>
+    </sql>
+
+    <sql name ="update_task_by_taskid" database="gaea_framework">
+        <![CDATA[
+
+                update task set task_status ='open' where task_id = #{task_id}
+        ]]>
+        <param name="task_id" type ="String"/>
+
+    </sql>
+
+    <sql name ="update_task_by_msgid" database="gaea_framework">
+        <![CDATA[
+
+                update sendmsg set sendmsg_status ='open' where sendmsg_id = #{sendmsg_id}
+        ]]>
+        <param name="sendmsg_id" type ="String"/>
+
+    </sql>
+
+    <sql name ="get_prev_by_tasktype" database="gaea_framework">
+        <![CDATA[
+
+                SELECT *
+                FROM finlab_case_prev_condition where prev_flag = #{task_type} and prev_case_id = #{case_id} and prev_setup_type=#{setup_type} order by prev_priority, prev_id asc ;
+        ]]>
+        <param name="task_type" type ="String"/>
+        <param name="case_id" type="String"/>
+        <param name="setup_type" type="String"/>
+    </sql>
+
+    <sql name ="gettaskmsg_bycase_id" database="gaea_framework">
+        <![CDATA[
+
+                SELECT *
+                FROM finlab_case_prev_condition where (prev_task_type = #{task_type} or prev_task_type=#{msg_type}) and prev_case_id = #{case_id} and prev_setup_type=#{setup_type} order by prev_priority, prev_id asc ;
+        ]]>
+        <param name="task_type" type ="String"/>
+        <param name="msg_type" type ="String"/>
+        <param name="case_id" type="String"/>
+        <param name="setup_type" type="String"/>
+    </sql>
+
+
+
+</sqlmapper>
