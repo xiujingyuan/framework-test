@@ -41,9 +41,9 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/foundation_test/util/tools/tools.py" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/resource/database_dev.config" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/resource/database.config" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/resource/database_dev.config" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/foundation_test/util/tools/tools.py" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IlluminatedCloudWorkspaceSettings">
     <option name="projectWorkspaceSettings">
@@ -353,6 +353,7 @@
       <workItem from="1691742438126" duration="10000" />
       <workItem from="1691742509749" duration="293000" />
       <workItem from="1691745161731" duration="65000" />
+      <workItem from="1691745239447" duration="155000" />
     </task>
     <servers />
   </component>
