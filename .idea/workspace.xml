@@ -241,11 +241,11 @@
     <list>
       <item itemvalue="Python.__init__" />
       <item itemvalue="Python tests.dh_auto_test" />
-      <item itemvalue="Python tests.pytest for test_cn_capacity_coefficient_in_hand.TestCnCapacityCoefficientInHand.test_cn_capacity_coefficient_in_hand_bigger_than_hand" />
+      <item itemvalue="Python tests.pytest for test_cn_avg_amount_by_month_assigned_amount.TestCnAvgAmountByMonthAssignedAmount" />
       <item itemvalue="Python tests.pytest for test_cn_base_common_avg_amount.TestCnBaseCommonAvgAmount" />
       <item itemvalue="Python tests.pytest for test_cn_capacity_coefficient_in_hand.TestCnCapacityCoefficientInHand" />
+      <item itemvalue="Python tests.pytest for test_cn_capacity_coefficient_in_hand.TestCnCapacityCoefficientInHand.test_cn_capacity_coefficient_in_hand_bigger_than_hand" />
       <item itemvalue="Python tests.pytest for test_recovery.TestRecovery" />
-      <item itemvalue="Python tests.pytest for test_cn_avg_amount_by_month_assigned_amount.TestCnAvgAmountByMonthAssignedAmount" />
     </list>
     <recent_temporary>
       <list>
